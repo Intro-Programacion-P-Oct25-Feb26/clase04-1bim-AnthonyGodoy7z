@@ -18,6 +18,7 @@ public class Ejemplo0311 {
         Scanner entrada = new Scanner(System.in);
         String nombre;
         String apellido;
+        String direccion;
         int nacimiento;
         int ciclo;
         
@@ -34,12 +35,17 @@ public class Ejemplo0311 {
         System.out.println("Ingrese su ciclo academico en numero");
         ciclo = entrada.nextInt();
         
+        entrada.nextLine();
+        System.out.println("Ingrese la direccion del estudiante");
+        direccion = entrada.nextLine();
+        
         System.out.printf("Datos del estudiante\nNombre: %s\nApellido: "
-                +"%s\nAño de nacimiento: %d\nCiclo Academico: %d\n", 
+                +"%s\nAño de nacimiento: %d\nCiclo Academico: %d\nDireccion: %s\n", 
                 nombre,
                 apellido,
                 nacimiento,
-                ciclo);
+                ciclo,
+                direccion);
         /*hemos cambiando en el System.out.printf el porcentaje s ´pr d ya que
         la variable nacimiento es entero*/
     }
